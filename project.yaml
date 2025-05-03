@@ -33,7 +33,7 @@ advanced:
         - { value: '', header: '' }
     cookies: ''
     custom_js: ''
-    custom_css: ".collage-block--tablet-desktop-screen {\n\theight: 600px !important;\n}"
+    custom_css: ".collage-block--tablet-desktop-screen {\n\theight: auto !important;\n}"
     mock_content:
         - { type: title, selector: '' }
     login:
