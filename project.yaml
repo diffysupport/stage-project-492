@@ -28,8 +28,8 @@ advanced:
     headers:
         - { value: '', header: '' }
     cookies: ''
-    custom_js: ''
-    custom_css: ".collage-block--tablet-desktop-screen {\n\theight: 800px !important;\n}\n\n.b-lazy.b-loaded {\n\theight: 800px !important\n}"
+    custom_js: "const img = document.querySelector('.b-lazy.b-loaded');\nconst container = document.querySelector('.collage-block--tablet-desktop-screen');\n\nif (img && container) {\n  const applyHeight = () => {\n    const height = `${img.offsetHeight}px`;\n    container.style.setProperty('height', height, 'important');\n  };\n\n  if (img.complete) {\n    applyHeight();\n  } else {\n    img.onload = applyHeight;\n  }\n}\n"
+    custom_css: ''
     mock_content:
         - { type: title, selector: '' }
     login:
