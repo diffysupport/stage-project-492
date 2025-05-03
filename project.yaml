@@ -6,12 +6,12 @@ basic:
         development: ''
     breakpoints:
         - 640
-        - 1024
-        - 1200
         - 760
-        - 1920
-        - 1080
         - 768
+        - 1024
+        - 1080
+        - 1200
+        - 1920
     pages:
         - /
         - /take-action
@@ -30,11 +30,23 @@ advanced:
     delay: 15
     scroll: true
     headers:
-        - { header: '', value: '' }
+        - { value: '', header: '' }
     cookies: ''
-    custom_js: ''
+    custom_js: "  const allElements = document.querySelectorAll('*');\n  let maxHeight = 0;\n  allElements.forEach((element) => {\n    const elementBottom = element.getBoundingClientRect().bottom + window.scrollY;\n    if (elementBottom > maxHeight) {\n      maxHeight = elementBottom;\n    }\n  });\n  document.documentElement.style.height = `${maxHeight}px`;\n  document.body.style.height = `${maxHeight}px`;"
     custom_css: ''
-    mock_content: ''
+    mock_content:
+        - { selector: '', type: title }
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
     performance:
         workers_production: 30
         workers_nonproduction: 10
