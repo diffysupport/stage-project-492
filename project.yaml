@@ -28,7 +28,7 @@ advanced:
     headers:
         - { value: '', header: '' }
     cookies: ''
-    custom_js: "const images = document.querySelectorAll('.b-lazy.b-loaded');\nconst containers = document.querySelectorAll('.collage-block--tablet-desktop-screen');\n\nimages.forEach((img, index) => {\n  const container = containers[index];\n    const height = `${img.offsetHeight}px`;\n    container.style.setProperty('height', '600px', 'important');\n});\n"
+    custom_js: "const images = document.querySelectorAll('.b-lazy.b-loaded');\nconst containers = document.querySelectorAll('.collage-block--tablet-desktop-screen');\n\nconst container = containers[0];\nconst height = `${images[0].offsetHeight}px`;\ncontainer.style.setProperty('height', '600px', 'important');\n"
     custom_css: ''
     mock_content:
         - { type: title, selector: '' }
