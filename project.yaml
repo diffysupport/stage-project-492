@@ -33,9 +33,9 @@ advanced:
         - { value: '', header: '' }
     cookies: ''
     custom_js: "  const allElements = document.querySelectorAll('*');\n  let maxHeight = 0;\n  allElements.forEach((element) => {\n    const elementBottom = element.getBoundingClientRect().bottom + window.scrollY;\n    if (elementBottom > maxHeight) {\n      maxHeight = elementBottom;\n    }\n  });\n  document.documentElement.style.height = `${maxHeight}px`;\n  document.body.style.height = `${maxHeight}px`;"
-    custom_css: ''
+    custom_css: ".collage-block--tablet-desktop-screen {\n\theight: 600px !important;\n}"
     mock_content:
-        - { selector: '', type: title }
+        - { type: title, selector: '' }
     login:
         type: none
         click_element: false
