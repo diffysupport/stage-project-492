@@ -29,7 +29,7 @@ advanced:
         - { value: '', header: '' }
     cookies: ''
     custom_js: ''
-    custom_css: ".collage-block--tablet-desktop-screen, .b-lazy.b-loaded {\n\theight: 600px !important;\n}\n\n.sliding-popup-bottom {\n\tdisplay: none !important;\n}"
+    custom_css: ".collage-block--tablet-desktop-screen, .b-lazy.b-loaded {\n\theight: 600px !important;\n}\n\n.sliding-popup-bottom {\n\tdisplay: none !important;\n}\n\nhtml, body {\n\toverflow: hidden !important; \n}"
     mock_content:
         - { type: title, selector: '' }
     login:
