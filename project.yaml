@@ -29,7 +29,7 @@ advanced:
         - { value: '', header: '' }
     cookies: ''
     custom_js: ''
-    custom_css: "\n@media (min-width: 1023px) {\n  .collage-block--tablet-desktop-screen {\n    height: 600px !important;\n  }\n\n  .view-collage > div > div > img {\n    height: 600px !important;\n  }\n}\n\n@media (max-width: 1023px) {\n  .collage-block--tablet-desktop-screen {\n    height: 400px !important;\n  }\n\n  .view-collage > div > div > img {\n    height: 400px !important;\n  }\n}\n\n\nhtml, body {\n\toverflow: hidden !important; \n}"
+    custom_css: "@media (min-width: 1024px) {\n  .collage-block--tablet-desktop-screen {\n    height: 600px !important;\n  }\n\n  .view-collage > div > div > img {\n    height: 600px !important;\n  }\n}\n\n@media (max-width: 1023px) {\n  .collage-block--tablet-desktop-screen {\n    height: 400px !important;\n  }\n\n  .view-collage > div > div > img {\n    height: 400px !important;\n  }\n}\n\n\nhtml, body {\n\toverflow: hidden !important; \n}"
     mock_content:
         - { type: title, selector: '' }
     login:
